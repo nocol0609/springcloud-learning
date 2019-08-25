@@ -1,4 +1,4 @@
-package com.nocol.entity;
+package com.nocol.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
