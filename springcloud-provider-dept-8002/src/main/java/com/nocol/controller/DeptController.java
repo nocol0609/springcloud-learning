@@ -3,6 +3,7 @@ package com.nocol.controller;
 import com.nocol.entities.Dept;
 import com.nocol.service.IDeptService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +24,9 @@ public class DeptController {
     @Autowired
     private DiscoveryClient client;
 
+    @Value("${server.port}")
+    String port;
+
     @PostMapping(value = "/dept/add")
     public boolean add(@RequestBody Dept dept)
     {
@@ -37,6 +41,11 @@ public class DeptController {
     @GetMapping(value = "/dept/list")
     public List<Dept> list() {
         return service.list();
+    }
+
+    @GetMapping("/hi")
+    public String hi(){
+        return "hi liuxp,i'm from port:"+port;
     }
 
     @GetMapping(value = "/dept/discovery")
