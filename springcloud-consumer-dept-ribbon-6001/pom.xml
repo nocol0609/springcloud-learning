@@ -8,8 +8,8 @@
         <groupId>com.nocol</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>springcloud-consumer-dept-80</artifactId>
-    <description>部门微服务消费者-80</description>
+    <artifactId>springcloud-consumer-dept-ribbon-6001</artifactId>
+    <description>部门微服务消费者-ribbon方式实现负载均衡</description>
 
     <dependencies>
         <!-- 引入自己定义的api通用包，可以使用Dept部门Entity -->
