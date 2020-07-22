@@ -3,15 +3,30 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-consumer-dept-ribbon-6001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-consumer-dept-ribbon-6001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-consumer-dept-ribbon-6001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-eureka-7001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-eureka-7001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-eureka-7001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-eureka-7002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-eureka-7002/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-eureka-7002/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-eureka-7002/src/main/resources/application.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-eureka-7003" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-eureka-7003/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-eureka-7003/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-eureka-7003/src/main/resources/application.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-provider-dept-8001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-provider-dept-8001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-provider-dept-8001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-provider-dept-8002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-provider-dept-8002/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-provider-dept-8002/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-provider-dept-8003" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-provider-dept-8003/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-provider-dept-8003/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
