@@ -5,13 +5,13 @@
 <mapper namespace="com.nocol.dao.DeptDao">
 
 	<select id="findById" resultType="com.nocol.entities.Dept" parameterType="Long">
-		select deptno,dname,db_source from dept where deptno=#{deptno};
+		select deptno,dname,db_source from simba_dept where deptno=#{deptno};
 	</select>
 	<select id="findAll" resultType="com.nocol.entities.Dept">
-		select deptno,dname,db_source from dept;
+		select deptno,dname,db_source from simba_dept;
 	</select>
 	<insert id="addDept" parameterType="com.nocol.entities.Dept">
-		INSERT INTO dept(dname,db_source) VALUES(#{dname},DATABASE());
+		INSERT INTO simba_dept(dname,db_source) VALUES(#{dname},DATABASE());
 	</insert>
 
 </mapper>

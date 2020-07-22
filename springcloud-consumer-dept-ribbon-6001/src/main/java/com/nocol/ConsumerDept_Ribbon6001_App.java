@@ -9,8 +9,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-@EnableEurekaClient
-@EnableDiscoveryClient  //向服务中心注册
+//@EnableEurekaClient
+//@EnableDiscoveryClient  //向服务中心注册
 public class ConsumerDept_Ribbon6001_App {
 
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class ConsumerDept_Ribbon6001_App {
      * @return
      */
     @Bean
-    @LoadBalanced
+    //@LoadBalanced
     RestTemplate restTemplate() {
         return new RestTemplate();
     }
