@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/springcloud-eureka-7002/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-eureka-7003/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-consumer-dept-ribbon-6001/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-consumer-dept-feign/pom.xml" />
       </list>
     </option>
   </component>
