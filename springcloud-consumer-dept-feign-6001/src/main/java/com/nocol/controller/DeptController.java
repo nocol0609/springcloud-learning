@@ -13,7 +13,7 @@ import java.util.List;
  * @description ：
  */
 @RestController
-@RequestMapping("/ribbon")
+@RequestMapping("/feign")
 public class DeptController {
 
     /**
