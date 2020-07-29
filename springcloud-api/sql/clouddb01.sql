@@ -18,8 +18,8 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 -- Table structure for dept
 -- ----------------------------
-DROP TABLE IF EXISTS `simba_dept`;
-CREATE TABLE `simba_dept` (
+DROP TABLE IF EXISTS `dept`;
+CREATE TABLE `dept` (
   `deptno` int(10) NOT NULL AUTO_INCREMENT COMMENT '部门id',
   `dname` varchar(50) DEFAULT NULL COMMENT '部门名称',
   `db_source` varchar(60) DEFAULT NULL COMMENT '数据库名',
@@ -29,7 +29,7 @@ CREATE TABLE `simba_dept` (
 -- ----------------------------
 -- Records of dept
 -- ----------------------------
-INSERT INTO `simba_dept` VALUES ('1', '开发部', 'clouddb01');
-INSERT INTO `simba_dept` VALUES ('2', '产品部', 'clouddb01');
-INSERT INTO `simba_dept` VALUES ('3', '运维部', 'clouddb01');
-INSERT INTO `simba_dept` VALUES ('4', '构架部', 'clouddb01');
+INSERT INTO `dept` VALUES ('1', '开发部', 'clouddb01');
+INSERT INTO `dept` VALUES ('2', '产品部', 'clouddb01');
+INSERT INTO `dept` VALUES ('3', '运维部', 'clouddb01');
+INSERT INTO `dept` VALUES ('4', '构架部', 'clouddb01');
