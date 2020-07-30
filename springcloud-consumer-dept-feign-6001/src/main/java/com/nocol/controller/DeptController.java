@@ -1,6 +1,7 @@
 package com.nocol.controller;
 
 import com.nocol.entities.Dept;
+import com.nocol.service.DeptClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
@@ -16,33 +17,21 @@ import java.util.List;
 @RequestMapping("/feign")
 public class DeptController {
 
-    /**
-     * 对外暴露的服务名称
-     */
-    private static final String REST_URL_PREFIX = "http://MICROSERVICECLOUD-DEPT";
-
     @Autowired
-    RestTemplate restTemplate;
+    private DeptClientService service;
 
     @PostMapping(value = "/dept/add")
     public boolean add(@RequestBody Dept dept) {
-        //return service.add(dept);
-        return Boolean.FALSE;
+        return service.add(dept);
     }
 
     @GetMapping(value = "/dept/get/{id}")
     public Dept get(@PathVariable("id") Long id) {
-        //return service.get(id);
-        return null;
+        return service.get(id);
     }
 
     @GetMapping(value = "/dept/list")
     public List<Dept> list() {
-        return restTemplate.getForObject(REST_URL_PREFIX + "/dept/list",List.class);
-    }
-
-    @GetMapping(value = "hi")
-    public String hi(){
-        return restTemplate.getForObject(REST_URL_PREFIX+"/hi",String.class);
+        return service.list();
     }
 }
