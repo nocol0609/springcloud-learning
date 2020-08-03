@@ -4,7 +4,6 @@ import com.nocol.entities.Dept;
 import com.nocol.service.DeptClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
