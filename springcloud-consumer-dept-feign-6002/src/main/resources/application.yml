@@ -10,4 +10,9 @@ eureka:
 
 spring:
   application:
-    name:  consumer-ribbon
+    name:  consumer-feign
+
+
+feign:
+  hystrix:
+    enabled: true

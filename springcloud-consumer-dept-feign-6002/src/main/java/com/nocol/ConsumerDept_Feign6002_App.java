@@ -8,12 +8,12 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableFeignClients(basePackages= {"com.nocol.service"})
-@ComponentScan("com.nocol.service")
-public class ConsumerDept_Feign6001_App {
+@EnableFeignClients(basePackages= {"com.nocol"})
+@ComponentScan("com.nocol")
+public class ConsumerDept_Feign6002_App {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConsumerDept_Feign6001_App.class, args);
+        SpringApplication.run(ConsumerDept_Feign6002_App.class, args);
     }
 
 }

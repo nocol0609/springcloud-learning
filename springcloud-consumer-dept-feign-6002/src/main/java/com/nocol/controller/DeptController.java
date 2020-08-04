@@ -1,7 +1,7 @@
 package com.nocol.controller;
 
 import com.nocol.entities.Dept;
-import com.nocol.service.DeptClientService;
+import com.nocol.service.DeptClientServiceFeign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,20 +17,20 @@ import java.util.List;
 public class DeptController {
 
     @Autowired
-    private DeptClientService service;
+    private DeptClientServiceFeign serviceFeign;
 
-    @PostMapping(value = "/dept/add")
+    @RequestMapping(value = "/dept/add",method = RequestMethod.POST)
     public boolean add(@RequestBody Dept dept) {
-        return service.add(dept);
+        return this.serviceFeign.add(dept);
     }
 
-    @GetMapping(value = "/dept/get/{id}")
+    @RequestMapping(value = "/dept/get/{id}",method = RequestMethod.GET)
     public Dept get(@PathVariable("id") Long id) {
-        return service.get(id);
+        return this.serviceFeign.get(id);
     }
 
-    @GetMapping(value = "/dept/list")
+    @RequestMapping(value = "/dept/list",method = RequestMethod.GET)
     public List<Dept> list() {
-        return service.list();
+        return this.serviceFeign.list();
     }
 }
