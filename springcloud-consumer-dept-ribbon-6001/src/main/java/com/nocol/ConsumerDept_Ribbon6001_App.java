@@ -13,6 +13,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableDiscoveryClient  //向服务中心注册
+//在启动该微服务时,就能加载自定义的ribbon配置类，使自定义的配置生效
 @RibbonClient(name="MICROSERVICECLOUD-DEPT",configuration= MySelfRule.class)
 public class ConsumerDept_Ribbon6001_App {
 

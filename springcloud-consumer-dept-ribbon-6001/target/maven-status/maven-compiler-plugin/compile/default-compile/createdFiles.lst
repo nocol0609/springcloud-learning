@@ -1,5 +1,5 @@
-com/rule/MY_RandomRule.class
-com/rule/MySelfRule.class
-com/nocol/controller/DeptController.class
-com/nocol/config/ConfigBean.class
-com/nocol/ConsumerDept_Ribbon6001_App.class
+com\rule\MY_RandomRule.class
+com\nocol\ConsumerDept_Ribbon6001_App.class
+com\nocol\controller\DeptController.class
+com\nocol\config\ConfigBean.class
+com\rule\MySelfRule.class

@@ -21,19 +21,21 @@ public class DeptController {
      */
     private static final String REST_URL_PREFIX = "http://MICROSERVICECLOUD-DEPT";
 
+    /**
+     * 使用 使用restTemplate访问restful接口非常的简单粗暴无脑。 (url, requestMap,
+     * ResponseBean.class)这三个参数分别代表 REST请求地址、请求参数、HTTP响应转换被转换成的对象类型。
+     */
     @Autowired
     RestTemplate restTemplate;
 
     @PostMapping(value = "/dept/add")
     public boolean add(@RequestBody Dept dept) {
-        //return service.add(dept);
-        return Boolean.FALSE;
+        return restTemplate.postForObject(REST_URL_PREFIX + "/dept/add", dept, Boolean.class);
     }
 
     @GetMapping(value = "/dept/get/{id}")
     public Dept get(@PathVariable("id") Long id) {
-        //return service.get(id);
-        return null;
+        return restTemplate.getForObject(REST_URL_PREFIX + "/dept/get/" + id, Dept.class);
     }
 
     @GetMapping(value = "/dept/list")

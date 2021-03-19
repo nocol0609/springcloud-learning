@@ -12,9 +12,9 @@ spring:
     name: microservicecloud-dept                         #微服务名称
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver          # mysql驱动包
-    url: jdbc:mysql://192.168.102.95:3306/cloudDB01?allowMultiQueries=true&userUnicode=true&characterEncoding=utf8&pinGlobalTxToPhysicalConnection=true             # 数据库名称
-    username: root
-    password: 123456
+    url: jdbc:mysql://192.168.142.213:3306/test?allowMultiQueries=true&userUnicode=true&characterEncoding=utf8&pinGlobalTxToPhysicalConnection=true             # 数据库名称
+    username: erp_test
+    password: nala@ERP_test
     dbcp2:
       min-idle: 5                                           # 数据库连接池的最小维持连接数
       initial-size: 5                                       # 初始化连接数
@@ -24,8 +24,8 @@ spring:
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url:
-      #defaultZone: http://localhost:7001/eureka
-      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+      defaultZone: http://localhost:7001/eureka
+      #defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
   instance:
     instance-id: microservicecloud-dept8001
     prefer-ip-address: true     #访问路径可以显示IP地址
