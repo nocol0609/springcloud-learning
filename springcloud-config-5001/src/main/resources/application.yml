@@ -1,0 +1,11 @@
+server:
+  port: 5001
+
+spring:
+  application:
+    name:  microservicecloud-config     #配置中心服务名称
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:nocol0609/microservicecloud-config.git #GitHub上面的git仓库名字
