@@ -26,7 +26,7 @@ public class ConfigClientRest {
 	}
 
 
-	@RequestMapping("/config")
+	@RequestMapping("/test")
     public String test() {
         return "get config success ！";
     }

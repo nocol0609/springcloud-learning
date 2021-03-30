@@ -8,4 +8,13 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:nocol0609/microservicecloud-config.git #GitHub上面的git仓库名字
+          uri: https://github.com/nocol0609/microservicecloud-config.git
+          default-label: main
+#          uri: git@github.com:nocol0609/microservicecloud-config.git #GitHub上面的git仓库名字
+#          strict-host-key-checking: false
+#          ignore-local-ssh-settings: true
+#          private-key: |
+#                        -----BEGIN OPENSSH PRIVATE KEY-----
+                         # ......
+#                        -----END OPENSSH PRIVATE KEY-----
+
