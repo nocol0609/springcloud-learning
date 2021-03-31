@@ -9,19 +9,19 @@
         <module name="springcloud-config-client-5002" />
         <module name="springcloud-config-dept-client-5003" />
         <module name="springcloud-consumer-dept-feign-6002" />
+        <module name="springcloud-config-5001" />
         <module name="springcloud-consumer-dept-ribbon-6001" />
         <module name="springcloud-zuul-gateway-9527" />
+        <module name="springcloud-provider-dept-hystrix-8001" />
         <module name="springcloud-eureka-7003" />
         <module name="springcloud-eureka-7002" />
         <module name="springcloud-eureka-7001" />
-        <module name="springcloud-consumer-hystrix-dashboard-9001" />
-        <module name="springcloud-provider-dept-8001" />
         <module name="springcloud-api" />
         <module name="springcloud-provider-dept-8002" />
+        <module name="springcloud-config-eureka-server-7001" />
         <module name="springcloud-provider-dept-8003" />
-        <module name="springcloud-config-5001" />
-        <module name="springcloud-provider-dept-hystrix-8001" />
-        <module name="springcloud-config-eureka-client-5004" />
+        <module name="springcloud-consumer-hystrix-dashboard-9001" />
+        <module name="springcloud-provider-dept-8001" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

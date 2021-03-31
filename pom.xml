@@ -23,7 +23,7 @@
         <module>springcloud-config-5001</module>
         <module>springcloud-config-client-5002</module>
         <module>springcloud-config-dept-client-5003</module>
-        <module>springcloud-config-eureka-client-5004</module>
+        <module>springcloud-config-eureka-server-7001</module>
 
     </modules>
     <packaging>pom</packaging>

@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>springcloud-config-dept-client-5003</artifactId>
+    <description>基于 config 配置的 dept 提供者 （config server的 客户端）</description>
 
     <dependencies>
         <!-- SpringCloudConfig配置 -->
